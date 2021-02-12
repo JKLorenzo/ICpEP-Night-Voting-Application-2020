@@ -1,0 +1,106 @@
+﻿<Page x:Class="ICpEP_Night_Voting_Application_2020.DefaultView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ICpEP_Night_Voting_Application_2020"
+      mc:Ignorable="d" 
+      d:DesignHeight="588" d:DesignWidth="1360"
+      Title="DefaultView">
+
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+            <Image Source="Resources/logo.png" Width="400" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        </Grid>
+
+        <Grid Grid.Row="1" x:Name="gridTextBox">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0" Width="600" Height="70" Margin="0 0 0 15" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*" />
+                    <ColumnDefinition Width=".2*" />
+                    <ColumnDefinition Width="2*" />
+                    <ColumnDefinition Width=".2*" />
+                    <ColumnDefinition Width="2*" />
+                    <ColumnDefinition Width=".2*" />
+                    <ColumnDefinition Width="2*" />
+                    <ColumnDefinition Width=".2*" />
+                    <ColumnDefinition Width="2*" />
+                    <ColumnDefinition Width=".2*" />
+                    <ColumnDefinition Width="2*" />
+                    <ColumnDefinition Width=".2*" />
+                    <ColumnDefinition Width="2*" />
+                </Grid.ColumnDefinitions>
+
+                <TextBox x:Name="tb1" Grid.Column="0" Text=""  FontSize="70" Width="70" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" MaxLength="1" FontFamily="Courier New" Foreground="White" PreviewKeyDown="tb1_PreviewKeyDown" TextChanged="tb1_TextChanged">
+                    <TextBox.Background>
+                        <SolidColorBrush Color="SlateGray" Opacity="0.5"/>
+                    </TextBox.Background>
+                </TextBox>
+
+                <TextBox x:Name="tb2" Grid.Column="2" Text="" FontSize="70" Width="70" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" MaxLength="1" FontFamily="Courier New" Foreground="White" PreviewKeyDown="tb2_PreviewKeyDown" TextChanged="tb2_TextChanged">
+                    <TextBox.Background>
+                        <SolidColorBrush Color="SlateGray" Opacity="0.5"/>
+                    </TextBox.Background>
+                </TextBox>
+
+                <TextBox x:Name="tb3" Grid.Column="4" Text="" FontSize="70" Width="70" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" MaxLength="1" FontFamily="Courier New" Foreground="White" PreviewKeyDown="tb3_PreviewKeyDown" TextChanged="tb3_TextChanged">
+                    <TextBox.Background>
+                        <SolidColorBrush Color="SlateGray" Opacity="0.5"/>
+                    </TextBox.Background>
+                </TextBox>
+
+                <TextBox x:Name="tb4" Grid.Column="6" Text="" FontSize="70" Width="70" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" MaxLength="1" FontFamily="Courier New" Foreground="White" PreviewKeyDown="tb4_PreviewKeyDown" TextChanged="tb4_TextChanged">
+                    <TextBox.Background>
+                        <SolidColorBrush Color="SlateGray" Opacity="0.5"/>
+                    </TextBox.Background>
+                </TextBox>
+
+                <TextBox x:Name="tb5" Grid.Column="8" Text="" FontSize="70" Width="70" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" MaxLength="1" FontFamily="Courier New" Foreground="White" PreviewKeyDown="tb5_PreviewKeyDown" TextChanged="tb5_TextChanged">
+                    <TextBox.Background>
+                        <SolidColorBrush Color="SlateGray" Opacity="0.5"/>
+                    </TextBox.Background>
+                </TextBox>
+
+                <TextBox x:Name="tb6" Grid.Column="10" Text="" FontSize="70" Width="70" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" MaxLength="1" FontFamily="Courier New" Foreground="White" PreviewKeyDown="tb6_PreviewKeyDown" TextChanged="tb6_TextChanged">
+                    <TextBox.Background>
+                        <SolidColorBrush Color="SlateGray" Opacity="0.5"/>
+                    </TextBox.Background>
+                </TextBox>
+
+                <TextBox x:Name="tb7" Grid.Column="12" Text="" FontSize="70" Width="70" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" MaxLength="1" FontFamily="Courier New" Foreground="White" PreviewKeyDown="tb7_PreviewKeyDown" TextChanged="tb7_TextChanged">
+                    <TextBox.Background>
+                        <SolidColorBrush Color="SlateGray" Opacity="0.5"/>
+                    </TextBox.Background>
+                </TextBox>
+            </Grid>
+        </Grid>
+        <Grid Grid.Row="1" x:Name="gridTextBlock" Opacity="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" x:Name="textBlock" Text="C o n n e c t i n g  t o  S e r v e r" FontSize="20" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0 70 0 0"/>
+
+            <Grid Grid.Row="1" x:Name="gridTextBlockInstruct" Opacity="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="3*"/>
+                </Grid.RowDefinitions>
+                <TextBlock x:Name="gridTextBlockInstruct1" Grid.Row="0" Text="Press 'Enter' to continue" FontSize="10" Foreground="White" TextAlignment="Center"/>
+                <TextBlock x:Name="gridTextBlockInstruct2" Grid.Row="1" Text="Press 'Back Space' to go back" FontSize="10" Foreground="White" TextAlignment="Center"/>
+            </Grid>
+        </Grid>
+    </Grid>
+</Page>
